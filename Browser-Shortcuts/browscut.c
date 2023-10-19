@@ -36,10 +36,16 @@ int main(int argc, char *argv[]) {
                    "\t- Close all browser windows:\033[1m Ctrl + Q\033[0m\n");
             break;
         case 'h':
-            printf("\thelp");
+            printf("\thelp"
+		   "\t \'-t\':\tto show Tabs managment shortcuts.\n"
+		   "\t \'-s\':\tto show Search and Search Bar Shortucts.\n"
+		   "\t \'-b\':\tto show Bookmarking and Bookmark bar shortcuts.\n"
+		   "\t \'-w\':\tto show Browser Window manegment shortcuts.\n"
+		   "\t \'-h\':\tto show help.\n"
+		   "\t \'-v\':\tto show current version.\n");
             break;
 	case 'v':
-		printf("\tVersion 1.0.0");
+		printf("\tVersion 1.0.1");
 		break;
 	default:
 		printf("\t\"Type browscut with \'-h\' to get more info\"");
