@@ -14,6 +14,7 @@ int main(int argc, char *argv[]) {
             printf("\t- Open a new tab:\033[1m Ctrl + T\033[0m\n"
                    "\t- To Move between tabs from right to left or up to down:\033[1m Ctrl + 1 to 8\033[0m\n"
                    "\t- To Move to the last tab on the right or down:\033[1m Ctrl + 9\033[0m\n"
+		   "\t- To Move Up/Down or Left/Right in tabs: \033[1m Ctrl + PgUp/PgDn\033[0m\n"
                    "\t- Close the current tab you are in:\033[1m Ctrl + W\033[0m\n"
                    "\t- Open recently closed tabs:\033[1m Ctrl + Alt + T\033[0m\n"
                    "\t- Go Back:\033[1m Alt + left arrow\033[0m\n"
@@ -45,7 +46,7 @@ int main(int argc, char *argv[]) {
 		   "\t \'-v\':\tto show current version.\n");
             break;
 	case 'v':
-		printf("\tVersion 1.0.1");
+		printf("\tVersion 1.0.2");
 		break;
 	default:
 		printf("\t\"Type browscut with \'-h\' to get more info\"");
